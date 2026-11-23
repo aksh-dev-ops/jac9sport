@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | SportZone</title>
+  <meta name="description" content="How SportZone collects, uses and protects your personal information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-2: #111a2e;
+      --card: #16213a;
+      --line: #24324f;
+      --text: #e8edf7;
+      --muted: #9aa7c2;
+      --accent: #22c55e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1180px, 100%); margin: 0 auto; padding: 0 20px; }
+    h1, h2, h3 { font-family: "Oswald", Impact, sans-serif; letter-spacing: .02em; line-height: 1.2; }
+
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(11, 18, 32, .85); backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 16px; }
+    .logo { display: flex; align-items: center; gap: 10px; font-family: "Oswald", sans-serif; font-size: 1.5rem; font-weight: 700; }
+    .logo span { color: var(--accent); }
+    .logo-mark { width: 34px; height: 34px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; }
+    .back { color: var(--muted); font-weight: 600; }
+    .back:hover { color: var(--text); }
+    a:focus-visible { outline: 3px solid rgba(34, 197, 94, .5); outline-offset: 3px; }
+
+    .page-head {
+      padding: 72px 0 56px; border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(800px 400px at 85% 10%, rgba(34, 197, 94, .18), transparent 60%),
+        linear-gradient(180deg, var(--bg-2), var(--bg));
+    }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: .14em; font-size: .8rem; text-transform: uppercase; margin-bottom: 10px; }
+    .page-head h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); text-transform: uppercase; }
+    .page-head p { color: var(--muted); margin-top: 10px; font-size: 1.1rem; }
+
+    .layout { display: grid; grid-template-columns: 260px 1fr; gap: 56px; padding: 56px 20px 88px; }
+    .toc { position: sticky; top: 96px; align-self: start; }
+    .toc h2 { font-size: 1rem; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+    .toc ol { list-style: none; display: grid; gap: 4px; }
+    .toc a { display: block; padding: 6px 12px; border-left: 2px solid var(--line); color: var(--muted); font-size: .95rem; transition: color .2s, border-color .2s; }
+    .toc a:hover { color: var(--text); border-color: var(--accent); }
+
+    .content { max-width: 760px; }
+    .content section { padding-bottom: 36px; margin-bottom: 36px; border-bottom: 1px solid var(--line); scroll-margin-top: 90px; }
+    .content section:last-child { border-bottom: 0; }
+    .content h2 { font-size: 1.6rem; margin-bottom: 14px; }
+    .content h3 { font-size: 1.15rem; margin: 20px 0 8px; color: var(--accent); }
+    .content p, .content li { color: #c9d2e4; font-size: 1.05rem; }
+    .content p + p { margin-top: 12px; }
+    .content ul { margin: 10px 0 0 22px; display: grid; gap: 6px; }
+    .content strong { color: var(--text); }
+    .content a { color: var(--accent); font-weight: 600; }
+    .content a:hover { text-decoration: underline; }
+    .note { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 18px 22px; margin-bottom: 40px; color: var(--muted); }
+    .contact-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; margin-top: 14px; }
+    .contact-card p + p { margin-top: 0; }
+
+    footer { border-top: 1px solid var(--line); padding: 32px 0; color: var(--muted); font-size: .95rem; }
+    .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .foot nav { display: flex; gap: 20px; }
+    .foot a:hover { color: var(--text); }
+
+    @media (max-width: 860px) {
+      .layout { grid-template-columns: 1fr; gap: 32px; padding-top: 36px; }
+      .toc { position: static; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px; }
+    }
+    @media (max-width: 480px) {
+      .wrap { padding: 0 16px; }
+      .layout { padding-left: 16px; padding-right: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="index.html" class="logo">
+        <div class="logo-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#05210f" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18M5.6 5.6c3.5 3.5 3.5 9.3 0 12.8M18.4 5.6c-3.5 3.5-3.5 9.3 0 12.8"/></svg>
+        </div>
+        Sport<span>Zone</span>
+      </a>
+      <a href="index.html" class="back">← Back to home</a>
+    </div>
+  </header>
+
+  <div class="page-head">
+    <div class="wrap">
+      <div class="eyebrow">Legal</div>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: 23 November 2026</p>
+    </div>
+  </div>
+
+  <div class="wrap layout">
+    <aside class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#intro">1. Introduction</a></li>
+        <li><a href="#collect">2. Information we collect</a></li>
+        <li><a href="#use">3. How we use it</a></li>
+        <li><a href="#cookies">4. Cookies</a></li>
+        <li><a href="#share">5. Sharing your information</a></li>
+        <li><a href="#retention">6. Data retention</a></li>
+        <li><a href="#security">7. Security</a></li>
+        <li><a href="#rights">8. Your rights</a></li>
+        <li><a href="#age">9. Age restriction</a></li>
+        <li><a href="#third">10. Third-party links</a></li>
+        <li><a href="#changes">11. Changes to this policy</a></li>
+        <li><a href="#contact">12. Contact us</a></li>
+      </ol>
+    </aside>
+
+    <main class="content">
+      <div class="note">This Privacy Policy explains what information SportZone collects when you visit our website, how we use it, and the choices you have. By using the site, you agree to the practices described below.</div>
+
+      <section id="intro">
+        <h2>1. Introduction</h2>
+        <p>SportZone ("we", "us", "our") provides live scores, fixtures, sports news and related content. We respect your privacy and are committed to protecting the personal information you share with us.</p>
+        <p>This policy applies to all pages of our website and any related services that link to it.</p>
+      </section>
+
+      <section id="collect">
+        <h2>2. Information we collect</h2>
+        <h3>Information you give us</h3>
+        <ul>
+          <li><strong>Contact details</strong>, such as your email address when you subscribe to our newsletter.</li>
+          <li><strong>Messages</strong> you send us through contact forms or email.</li>
+          <li><strong>Preferences</strong>, such as your favourite sports or teams, if you choose to set them.</li>
+        </ul>
+        <h3>Information collected automatically</h3>
+        <ul>
+          <li>Device and browser type, operating system and screen size.</li>
+          <li>IP address and approximate location (country or city).</li>
+          <li>Pages you visit, time spent on the site and links you click.</li>
+          <li>Referring website or advertisement that brought you to us.</li>
+        </ul>
+      </section>
+
+      <section id="use">
+        <h2>3. How we use your information</h2>
+        <ul>
+          <li>To provide and improve the website and its content.</li>
+          <li>To send newsletters and match alerts you have signed up for.</li>
+          <li>To respond to your questions and requests.</li>
+          <li>To understand how visitors use the site so we can make it better.</li>
+          <li>To show relevant content and advertising.</li>
+          <li>To prevent fraud, abuse and security problems.</li>
+          <li>To comply with legal obligations.</li>
+        </ul>
+        <p>You can unsubscribe from our emails at any time using the link at the bottom of every message.</p>
+      </section>
+
+      <section id="cookies">
+        <h2>4. Cookies and similar technologies</h2>
+        <p>We use cookies and browser storage to make the site work and to understand how it is used. For example, we may remember that you have confirmed your age so we don't ask again.</p>
+        <ul>
+          <li><strong>Essential cookies</strong> keep the site running and secure.</li>
+          <li><strong>Analytics cookies</strong> help us count visits and see which pages are popular.</li>
+          <li><strong>Advertising cookies</strong> may be set by our partners to show relevant ads and measure their performance.</li>
+        </ul>
+        <p>You can block or delete cookies in your browser settings. Some parts of the site may not work properly without them.</p>
+      </section>
+
+      <section id="share">
+        <h2>5. Sharing your information</h2>
+        <p>We do not sell your personal information. We may share it only with:</p>
+        <ul>
+          <li><strong>Service providers</strong> who help us run the site, such as hosting, email and analytics providers, under contracts that protect your data.</li>
+          <li><strong>Advertising partners</strong>, limited to non-identifying or pseudonymous data.</li>
+          <li><strong>Authorities</strong>, when required by law or to protect our rights and users' safety.</li>
+          <li><strong>A new owner</strong>, if SportZone is merged with or sold to another company.</li>
+        </ul>
+      </section>
+
+      <section id="retention">
+        <h2>6. Data retention</h2>
+        <p>We keep personal information only as long as needed for the purposes described in this policy, or as required by law. Newsletter data is kept until you unsubscribe. Analytics data is kept in aggregated or anonymised form.</p>
+      </section>
+
+      <section id="security">
+        <h2>7. Security</h2>
+        <p>We use reasonable technical and organisational measures, such as encrypted connections (HTTPS) and restricted access, to protect your information. No method of transmission over the internet is completely secure, so we cannot guarantee absolute security.</p>
+      </section>
+
+      <section id="rights">
+        <h2>8. Your rights</h2>
+        <p>Depending on where you live, you may have the right to:</p>
+        <ul>
+          <li>Access the personal information we hold about you.</li>
+          <li>Ask us to correct or delete it.</li>
+          <li>Object to or restrict how we use it.</li>
+          <li>Withdraw consent at any time, where we rely on consent.</li>
+          <li>Receive a copy of your data in a portable format.</li>
+          <li>Complain to your local data protection authority.</li>
+        </ul>
+        <p>To exercise any of these rights, contact us using the details below.</p>
+      </section>
+
+      <section id="age">
+        <h2>9. Age restriction</h2>
+        <p>This website is intended only for people aged <strong>18 years or older</strong>. We do not knowingly collect personal information from anyone under 18. If you believe a minor has given us their information, please contact us and we will delete it.</p>
+      </section>
+
+      <section id="third">
+        <h2>10. Third-party links</h2>
+        <p>Our site may contain links to other websites. We are not responsible for the privacy practices or content of those sites. Please read their privacy policies before sharing any information with them.</p>
+      </section>
+
+      <section id="changes">
+        <h2>11. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will change the "Last updated" date at the top of this page. Significant changes may also be announced on the site or by email.</p>
+      </section>
+
+      <section id="contact">
+        <h2>12. Contact us</h2>
+        <p>If you have any questions about this Privacy Policy or how we handle your data, please get in touch:</p>
+        <div class="contact-card">
+          <p><strong>SportZone</strong></p>
+          <p>Email: <a href="mailto:privacy@example.com">privacy@example.com</a></p>
+          <p>Address: 123 Stadium Road, Your City, Your Country</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="year"></span> SportZone. All rights reserved.</span>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
